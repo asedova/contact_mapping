@@ -88,8 +88,7 @@ class contact_mapping:
                            'name': '/4faza.ec.mat',
                            'description': 'summed score matrix, entropy-bias corrected'}
                             ]
-                           }
- 
+                            
         report = KBaseReport(self.callback_url)
         report_info = report.create({'report': {'objects_created':[],
                                                 'text_message': params['parameter_1']},
