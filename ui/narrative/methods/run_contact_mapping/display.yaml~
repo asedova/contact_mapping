@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: CCMPredPy Contact Mapping
+name: Method Name Here
 
 tooltip: |
-    Co-evolutionary residue contacts
+    Perform some kind of method
 
 screenshots: []
 
