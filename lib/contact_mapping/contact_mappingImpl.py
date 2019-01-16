@@ -91,9 +91,8 @@ class contact_mapping:
                            }
  
         report = KBaseReport(self.callback_url)
-        report_info = report.create({'report': {'objects_created':[],
-                                                'text_message': params['parameter_1']},
-                                                'workspace_name': params['workspace_name']})
+        report_info = report.create_extended_report(report_params)
+                                               
         output = {
             'report_name': report_info['name'],
             'report_ref': report_info['ref'],
