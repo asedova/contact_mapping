@@ -71,9 +71,9 @@ class contact_mapping:
                 '--entropy-correction', f'{self.shared_folder}/{name}.ec.mat']
 
         if params.get('max_gaps_per_position'):
-            ccmpred_command_list +=['--max-gap-pos', params.get('max_gaps_per_position')]
+            ccmpred_command_list +=['--max-gap-pos', str(params.get('max_gaps_per_position'))]
         if params.get('max_gaps_per_sequence'):
-            ccmpred_command_list +=['--max-gap-seq', params.get('max_gaps_per_sequence')]
+            ccmpred_command_list +=['--max-gap-seq', str(params.get('max_gaps_per_sequence'))]
 
         with Popen(ccmpred_command_list, stdout=PIPE, stderr=STDOUT, bufsize=1) as p:  
 

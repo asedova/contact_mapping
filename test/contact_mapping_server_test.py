@@ -64,4 +64,4 @@ class contact_mappingTest(unittest.TestCase):
         # Check returned data with
         # self.assertEqual(ret[...], ...) or other unittest methods
         ret = self.serviceImpl.run_contact_mapping(self.ctx, {'workspace_name': self.wsName,
-                                                             'msa_ref': '22572/15/1', 'pdb_ref': '22572/13/2', 'contactmap_name': 'test'})
+                                                             'msa_ref': '22572/15/1', 'pdb_ref': '22572/13/2', 'contactmap_name': 'test', 'max_gaps_per_position': 50, 'max_gaps_per_sequence': 50})
