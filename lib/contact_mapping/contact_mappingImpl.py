@@ -94,7 +94,7 @@ class contact_mapping:
             pdb = pdb_utl.structure_to_pdb_file( {'destination_dir': self.shared_folder, 
                              'input_ref': params['pdb_ref']})
             pdb=pdb['file_path']          
-            ccm_plot_cmd_list+=[pdb]
+            ccm_plot_cmd_list+=['--pdb-file', pdb]
            
         Popen(ccm_plot_cmd_list, stdout=sys.stdout, stderr=sys.stderr).communicate()        
 

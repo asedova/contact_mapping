@@ -66,7 +66,7 @@ class contact_mapping:
         msa=msa['file_path']
         ccmpred_command_list += [msa]
         name= params.get('contactmap_name')
-        ccmpred_command_list += ['-m',  f'{self.shared_folder}/{name}.mat',
+        ccmpred_command_list += ['-m',  f'{self.shared_folder}/{name}.noapc.mat',
                 '--apc', f'{self.shared_folder}/{name}.apc.mat',
                 '--entropy-correction', f'{self.shared_folder}/{name}.ec.mat']
 
