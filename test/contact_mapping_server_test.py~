@@ -64,4 +64,4 @@ class contact_mappingTest(unittest.TestCase):
         # Check returned data with
         # self.assertEqual(ret[...], ...) or other unittest methods
         ret = self.serviceImpl.run_contact_mapping(self.ctx, {'workspace_name': self.wsName,
-                                                             'msa_ref': '22572/11/1', 'contactmap_name': 'test'})
+                                                             'msa_ref': '22572/11/1'})
