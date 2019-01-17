@@ -8,7 +8,7 @@
     "categories": ["active","comparative_genomics"],
     "app_type": "editor",
     "widgets": {
-        "input": null,
+        "input": "kbaseNarrativeMethodInput",
         "output": "no-display"
     },
     "parameters": [
